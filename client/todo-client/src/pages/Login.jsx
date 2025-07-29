@@ -29,10 +29,10 @@ const Login = () => {
 
     return (
         <div className="d-flex justify-content-center align-items-center bg-body px-3"
-        style={{ minHeight: "calc(100vh - 20px)" }}>
+            style={{ minHeight: "calc(100vh - 20px)" }}>
             <ThemeToggle />
             <div className="card shadow-lg p-4 rounded-4 fade-in w-100"
-            style={{ maxWidth: "420px" }}>
+                style={{ maxWidth: "420px" }}>
                 <div className="text-center mb-4">
                     <i className="bi bi-lock-fill fs-1 text-primary"></i>
                     <h3 className="mt-2 fw-bold">Iniciar sesión</h3>
@@ -70,9 +70,19 @@ const Login = () => {
 
                 <div className="text-center mt-4">
                     <small className="text-muted">
-                        ¿Olvidaste tu contraseña? <a href="#" className="text-primary fw-semibold">Recupera</a>
+                        ¿Olvidaste tu contraseña? <a href="/forgot-password" className="text-primary fw-semibold">Recuperar</a>
+                        <br />
+                        ¿No tienes cuenta?{" "}
+                        <span
+                            className="text-primary fw-semibold"
+                            role="button"
+                            onClick={() => navigate("/register")}
+                        >
+                            Regístrate
+                        </span>
                     </small>
                 </div>
+
             </div>
         </div>
     );

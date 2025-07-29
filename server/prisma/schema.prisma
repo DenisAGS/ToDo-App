@@ -17,8 +17,10 @@ model User {
   id       Int    @id @default(autoincrement())
   email    String @unique
   password String
-  tasks    Task[] // ← esto faltaba
+  tasks    Task[]
   Todo     Todo[]
+  resetToken    String?      
+  resetTokenExp DateTime? 
 }
 
 model Todo {

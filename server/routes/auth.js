@@ -2,9 +2,12 @@ import express from 'express';
 import bcrypt from "bcryptjs";
 import jwt from 'jsonwebtoken';
 import { PrismaClient } from '@prisma/client';
+import { requestPasswordReset } from '../controllers/authController.js';
 
 const router = express.Router();
 const prisma = new PrismaClient();
+
+router.post("/requestPasswordReset", requestPasswordReset);
 
 // Register route
 router.post('/register', async (req, res) => {
