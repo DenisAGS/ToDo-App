@@ -13,15 +13,13 @@ Este proyecto fue desarrollado con un stack moderno y completo para gestionar ta
 - **PostgreSQL** – Base de datos relacional
 - **JWT (JSON Web Tokens)** – Autenticación segura
 - **bcryptjs** – Encriptación de contraseñas
-- **dotenv** – Variables de entorno
 - **nodemailer** – Envío de correos para recuperación de contraseña
 - **Resend (SMTP gratuito)** – Proveedor de correo alternativo seguro
 
 ### 💻 Frontend:
 - **React.js** – Librería para la interfaz de usuario
-- **React Router** – Navegación entre páginas
 - **Axios** – Peticiones HTTP al backend
-- **Bootstrap 5** – Estilos elegantes y responsivos
+- **Bootstrap 5** – Estilos elegantes
 
 ---
 
